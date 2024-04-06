@@ -1,20 +1,37 @@
 // Check 
 console.log('JS OK LIST');
 
-//Creo Array 
+/* CREO UN ARRAY */
 const fruit = ['banana', 'mela', 'pera', 'ciliegia', 'arancia', 'mandarino', 'cocomero', 'limone', 'fragola'];
+
+
+/* CONTROLLO RISPOSTA */
 console.table(fruit);
 
-//Aggiungo la Pesca all'Array
+
+/* METTO ALL'INIZIO DELL'ARRAY LA PAROLA */
 fruit.splice(0, 0, 'Pesca');
+
+
+/* CONTROLLO RISPOSTA */
 console.table(fruit);
 
-//Creo ciclo For
+
+/* CICLO FOR PER LA LUNGHEZZA DELL'ARRAY E INCREMENTO DI 1 */
 for(let i = 0; i < fruit.length; i++){
-    // Metodo if else
+    
+    /* SE NELL'ARRAY E INCLASA LA PAROLA COCOMERO */
     if(fruit.includes('cocomero')) {
+
+        /* STAMPO IN CONSOLE  */
         console.log("Trovato! Devo solo preparare il cocktail.")
+
+        /* ALTRIMENTI  */
     } else {
+
+        /* STAMPO IN CONSOLE */
         console.log("Oh no, devo uscire a comprare il cocomero!")
+
     }
+
 }
